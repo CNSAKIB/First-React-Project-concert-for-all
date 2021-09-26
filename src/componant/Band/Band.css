@@ -1,0 +1,9 @@
+.band-container img{
+    max-height: 300px;
+   margin-bottom: 80px;
+}
+.btn-regular{
+background-color: rgb(253, 187, 18);
+border: 1px solid lightgray;
+padding: 3px 5px;
+}

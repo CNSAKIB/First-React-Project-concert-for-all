@@ -1,0 +1,28 @@
+import React from 'react';
+import './Band.css'
+
+const Band = (props) => {
+    console.log(props.band);
+    const { id, name, salary, members, img, genre } = props.band || {};
+    return (
+        <div className="col-md-4 g-4 band-container text-center">
+            <div class="card h-100">
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">{name}</h5>
+                    <p class="card-text"> <b>Salary:</b> {salary}
+                        <br />
+                        <b> Members:</b> {members}
+                        <br />
+                        <b>Genre:</b> {genre}
+                        <br />
+                        <b>ID:</b> {id}
+                    </p>
+                    <button className="btn-regular"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div >
+    );
+};
+
+export default Band;

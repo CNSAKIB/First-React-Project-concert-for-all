@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Consert from './componant/Concert/Consert';
+import Header from './componant/Header/Header';
 
 function App() {
+
   return (
-    <div className="App">
-      <h1> Welcome to my Assignment on React!</h1>
+    <div>
+      <Header></Header>
+      <Consert></Consert>
     </div>
   );
 }
