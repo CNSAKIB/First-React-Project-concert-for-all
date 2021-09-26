@@ -10,7 +10,7 @@ const Band = (props) => {
                 <img src={img} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{name}</h5>
-                    <p class="card-text"> <b>Salary:</b> {salary}
+                    <p class="card-text"> <b>Salary: </b>${salary}
                         <br />
                         <b> Members:</b> {members}
                         <br />
@@ -18,7 +18,7 @@ const Band = (props) => {
                         <br />
                         <b>ID:</b> {id}
                     </p>
-                    <button onClick={() => props.handleAddProduct(props.band)} className="btn-regular"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button onClick={() => props.handleAddProduct(props.band)} className="btn-regular"><i class="fas fa-shopping-cart"></i> Pick your Band</button>
                 </div>
             </div>
         </div >

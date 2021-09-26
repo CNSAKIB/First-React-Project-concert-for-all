@@ -7,6 +7,9 @@
 .band-container img{
     max-height: 300px;
    margin-bottom: 80px;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 .btn-regular{
 background-color: rgb(253, 187, 18);

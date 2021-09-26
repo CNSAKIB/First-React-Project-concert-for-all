@@ -1,7 +1,12 @@
 .cart-design{
     border:1px solid lightgray ;
     background-color: rgb(186, 230, 245);
+    padding:10px 0;
 }
 .cart-design ul li{
     list-style-type: none;
+    color: white;
+    margin-top:5px;
+    border: 1px solid lightblue;
+    background-color: tomato;
 }
