@@ -2,7 +2,7 @@ import React from 'react';
 import './Band.css'
 
 const Band = (props) => {
-    // console.log(props.band);
+    // creating cards to display each band
     const { id, name, salary, members, img, genre } = props.band || {};
     return (
         <div className="col-md-4 g-4 band-container text-center">

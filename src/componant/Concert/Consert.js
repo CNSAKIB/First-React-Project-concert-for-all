@@ -4,14 +4,16 @@ import Cart from '../Cart/Cart';
 import './Consert.css'
 
 const Consert = () => {
+    // using usestate function to show bands on UI 
     const [concert, setConcert] = useState([]);
+    // Using usestate funtion to show product on cart
     const [cart, setCart] = useState([]);
-
+    // funtion to handle pick band button 
     const handleAddProduct = (bands) => {
         const newCart = [...cart, bands]
         setCart(newCart);
     }
-
+    // loading data from json file using useEffect 
     useEffect(() => {
         fetch('./concert.JSON')
             .then(res => res.json())
