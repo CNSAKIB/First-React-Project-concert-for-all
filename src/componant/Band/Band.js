@@ -2,11 +2,11 @@ import React from 'react';
 import './Band.css'
 
 const Band = (props) => {
-    console.log(props.band);
+    // console.log(props.band);
     const { id, name, salary, members, img, genre } = props.band || {};
     return (
         <div className="col-md-4 g-4 band-container text-center">
-            <div class="card h-100">
+            <div class="card h-100 card-style">
                 <img src={img} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{name}</h5>
@@ -18,7 +18,7 @@ const Band = (props) => {
                         <br />
                         <b>ID:</b> {id}
                     </p>
-                    <button className="btn-regular"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button onClick={() => props.handleAddProduct(props.band)} className="btn-regular"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                 </div>
             </div>
         </div >

@@ -1,0 +1,7 @@
+.cart-design{
+    border:1px solid lightgray ;
+    background-color: rgb(186, 230, 245);
+}
+.cart-design ul li{
+    list-style-type: none;
+}

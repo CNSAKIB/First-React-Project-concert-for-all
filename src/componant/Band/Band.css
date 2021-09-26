@@ -1,3 +1,9 @@
+.band-container{
+    background-color: lightgray;
+}
+.card-style{
+    border-radius:10px ;
+}
 .band-container img{
     max-height: 300px;
    margin-bottom: 80px;
